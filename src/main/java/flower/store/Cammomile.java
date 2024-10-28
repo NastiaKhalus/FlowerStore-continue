@@ -6,7 +6,7 @@ class Cammomile extends Flower {
         super(FlowerColor.WHITE, FlowerType.CAMMOMILE, 0.0, 0.0);
     }
 
-    public Cammomile(double sepalLength, FlowerColor color, double price) {
+    public Cammomile (double sepalLength, FlowerColor color, double price) {
         super(color, FlowerType.CAMMOMILE, price, sepalLength);
     }
 }
