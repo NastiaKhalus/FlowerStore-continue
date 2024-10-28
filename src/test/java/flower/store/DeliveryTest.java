@@ -1,7 +1,7 @@
 package flower.store;
 
 import flower.store.delivery.Delivery;
-import flower.store.delivery.DeliveryStrategy;
+import flower.store.delivery.PostDeliveryStrategy;
 import flower.store.delivery.DHLDeliveryStrategy;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -15,7 +15,7 @@ public class DeliveryTest {
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
         
-        Delivery delivery = new DeliveryStrategy();
+        Delivery delivery = new PostDeliveryStrategy();
         delivery.deliver("flowers");
         
         assertEquals("Delivered flowers by Post\n", outContent.toString());
