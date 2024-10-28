@@ -1,5 +1,5 @@
 package flower.store.delivery;
-public class DeliveryStrategy implements Delivery {
+public class PostDeliveryStrategy implements Delivery {
     @Override
     public void deliver(String item) {
         System.out.println("Delivered " + item + " by Post");
